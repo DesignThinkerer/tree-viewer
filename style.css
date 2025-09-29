@@ -1,0 +1,131 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1f2937;
+    --card-bg: #f9fafb;
+    --border-color: #e5e7eb;
+    --icon-color: #4b5563;
+    --hover-bg: #f3f4f6;
+    --link-color: #3b82f6;
+    --input-bg: #ffffff;
+    --button-bg: #4f46e5;
+    --button-text: #ffffff;
+    --secondary-button-bg: #e5e7eb;
+    --secondary-button-text: #374151;
+}
+
+html.dark {
+    --bg-color: #0b1220;
+    --text-color: #eef2ff;
+    --card-bg: #111827;
+    --border-color: #374151;
+    --icon-color: #9ca3af;
+    --hover-bg: #1f2937;
+    --link-color: #60a5fa;
+    --input-bg: #111827;
+    --button-bg: #6366f1;
+    --button-text: #ffffff;
+    --secondary-button-bg: #374151;
+    --secondary-button-text: #f9fafb;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color .18s ease, color .18s ease;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--icon-color);
+}
+
+/* small utilities */
+.icon-container {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* focus and accessible outlines */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+    outline: 3px solid rgba(59, 130, 246, 0.18);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+/* copy button visibility - we prefer CSS hover/focus for accessibility */
+.copy-btn {
+    opacity: 0;
+    transition: opacity .15s ease;
+}
+
+li.group:hover .copy-btn,
+li.group:focus-within .copy-btn {
+    opacity: 1;
+}
+
+/* small spinner animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+/* ensure tree lists don't make the page overflow */
+.tree-wrapper {
+    min-height: 0;
+    flex: 1 1 auto;
+}
+
+.truncate-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* make material symbols inherit text color */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+/* responsive tweaks for very long names */
+.repo-title {
+    font-weight: 700;
+}
