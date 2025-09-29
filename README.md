@@ -12,7 +12,7 @@ To embed it in your website, you can use an `iframe`:
 <iframe src="https://designthinkerer.github.io/tree-viewer/?repo=https://github.com/facebook/react&expand=false&transparent=true&theme=light" frameborder="0" style="width: 100%; height: 500px;"></iframe>
 ```
 
-<img width="2007" height="285" alt="image" src="https://github.com/user-attachments/assets/815fea6f-39f4-4856-afa5-4810057c9c88" />
+<img width="2022" height="1293" alt="image" src="https://github.com/user-attachments/assets/5653bd20-1f4e-43db-9f2b-168204e1ff88" />
 
 ## Configuration
 
