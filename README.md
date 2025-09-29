@@ -4,12 +4,12 @@ A simple static GitHub repo tree viewer, to allow embedding a tree view of a Git
 
 ## Example
 
-[Example Link](https://designthinkerer.github.io/tree-viewer/?repo=https://github.com/DesignThinkerer/tree-viewer&expand=false&transparent=true&theme=light)
+[Example Link](https://designthinkerer.github.io/tree-viewer/?repo=https://github.com/facebook/react&expand=false&transparent=true&theme=light)
 
 To embed it in your website, you can use an `iframe`:
 
 ```html
-<iframe src="https://designthinkerer.github.io/tree-viewer/?repo=https://github.com/DesignThinkerer/tree-viewer&expand=false&transparent=true&theme=light" frameborder="0" style="width: 100%; height: 500px;"></iframe>
+<iframe src="https://designthinkerer.github.io/tree-viewer/?repo=https://github.com/facebook/react&expand=false&transparent=true&theme=light" frameborder="0" style="width: 100%; height: 500px;"></iframe>
 ```
 
 <img width="2007" height="285" alt="image" src="https://github.com/user-attachments/assets/815fea6f-39f4-4856-afa5-4810057c9c88" />
