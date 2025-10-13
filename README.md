@@ -24,3 +24,5 @@ The tree viewer is configured through URL parameters in the `iframe`'s `src` att
 | `theme` | `light` \| `dark` | Sets the color theme. If omitted, it respects the user's system preference (`prefers-color-scheme`). |
 | `transparent`| `true` \| `false` | If `true`, the background of the viewer will be transparent. Default is `false`. |
 | `expand` | `true` \| `false` | If `true`, all folders in the repository tree will be expanded by default. Default is `false`. |
+
+TODO: self adjust iframe size https://scientyficworld.org/make-an-iframe-automatically-adjust-its-height/?ref=dailydev
